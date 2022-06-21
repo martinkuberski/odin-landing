@@ -1,5 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .header, .top, .footer {
     background-color: #1F2937;
+}
+
+.header {
+    display: flex;
+}
+
+.top {
+    display: flex;
+}
+
+.left {
+    display: flex; 
+    flex-direction: column;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes {
+    display: flex;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -9,6 +41,16 @@
 
 .bottom {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+}
+
+.ad {
+    display: flex;
+}
+
+.footer {
+    display: flex;
 }
 
 .quote {
