@@ -2,6 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
+    margin: 0;
+    justify-content: stretch;
 }
 
 .top .left p {
@@ -15,29 +17,55 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 64px;
 }
 
 .top {
     display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 64px 64px;
 }
 
 .left {
     display: flex; 
     flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
 }
 
 .middle {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px 128px;
+    text-align: center;
 }
 
 .boxes {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .box {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    color: gray;
+    width: 128px;
+}
+
+.placeholder {
+    width: 128px;
+    height: 128px;
+    background-color: #3882F6;
+    border: 8px #3882F6;
+    border-radius: 4px;    
 }
 
 .logo {
@@ -50,16 +78,26 @@ body {
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    padding: 64px 128px;
 }
 
 .ad {
     display: flex;
     color: #F9FAF8;
+    justify-content: space-around;
+    margin: 64px 128px;
+    padding: 32px 16px;
+    border-radius: 8px;
 }
 
 .footer {
     display: flex;
     color: #E5E7EB;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
 }
 
 .quote {
@@ -67,6 +105,11 @@ body {
     font-size: 36px;
     font-style: italic;
     font-weight: 300;
+}
+
+.author {
+    text-align: end;
+    font-weight: bold;
 }
 
 .right {
@@ -78,6 +121,10 @@ h1 {
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
 }
 
 h2 {
@@ -92,12 +139,31 @@ a {
     font-size: 18px;
 }
 
+button {
+    width: 128px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+}
+
+.ad button {
+    border-style: solid;
+    border: 4px white;
+}
+
+.ad p {
+    font-weight: 300;
+}
+
 button, .ad {
     background-color: #3882F6;
     color: #F9FAF8;
-    font-weight: bold;
 }
 
 ul {
+    display: flex;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
 }
